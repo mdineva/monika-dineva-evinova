@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-07-28T12:14:56.202Z",
+    "end": "2025-07-28T12:14:57.851Z",
+    "duration": 1649,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "94f6ac7d-3bcf-427c-ac3b-ba428e90627a",
+      "title": "",
+      "fullFile": "cypress/e2e/menuNavigation.spec.js",
+      "file": "cypress/e2e/menuNavigation.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b259888d-89e7-46ec-8459-5c697f517503",
+          "title": "Navigation to Subpages - Browser: chrome",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should successfully navigate to About Us page",
+              "fullTitle": "Navigation to Subpages - Browser: chrome should successfully navigate to About Us page",
+              "timedOut": null,
+              "duration": 1638,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_HomePage.default.clickOnMenuItem(\"About Us\");\ncy.url().should('include', '/about-us');\n_AboutPage.default.getPageTitle().should('have.text', 'About Evinova');",
+              "err": {},
+              "uuid": "d9a39a4a-d885-4942-82a4-97f002c01b9f",
+              "parentUUID": "b259888d-89e7-46ec-8459-5c697f517503",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d9a39a4a-d885-4942-82a4-97f002c01b9f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1638,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "chrome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "screenshotOnRunFailure": true,
+        "reportFilename": "chrome"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

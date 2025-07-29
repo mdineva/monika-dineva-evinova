@@ -1,0 +1,11 @@
+{
+  "firstName": "Name",
+  "lastName": "Surname",
+  "email": "name.surname@work.com",
+  "company": "Test",
+  "jobTitle": "Job Title",
+  "country": "Spain",
+  "phoneNumber": "34100023456",
+  "therapeuticArea": "Other",
+  "interestedIn": "Other"
+}

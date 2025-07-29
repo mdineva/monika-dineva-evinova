@@ -1,0 +1,38 @@
+{
+  "config": {
+    "target": "https://reqres.in",
+    "phases": [
+      {
+        "name": "Initial performance test",
+        "duration": 30,
+        "arrivalRate": 10
+      },
+      {
+        "name": "Stress test",
+        "duration": 30,
+        "arrivalRate": 200
+      }
+    ],
+    "defaults": {
+      "headers": {
+        "x-api-key": "reqres-free-v1",
+        "Content-Type": "application/json"
+      }
+    }
+  },
+  "scenarios": [
+    {
+      "flow": [
+        {
+          "post": {
+            "url": "/api/users",
+            "json": {
+              "name": "Load Test User",
+              "job": "Tester"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
